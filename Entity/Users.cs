@@ -31,21 +31,7 @@
         {
             get { return _Rol; }
             set { _Rol = value; }
-        }
-
-        private bool _Estado;
-        public bool Estado
-        {
-            get { return _Estado; }
-            set { _Estado = value; }
-        }
-
-        private bool _Eliminado;
-        public bool Eliminado
-        {
-            get { return _Eliminado; }
-            set { _Eliminado = value; }
-        }
+        }      
 
         private string _FechaLog;
         public string Fecha_log
