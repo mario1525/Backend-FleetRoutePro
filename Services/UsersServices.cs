@@ -20,7 +20,7 @@ namespace Services
 
         // get: api/todoitems
         [HttpGet]
-        //[Authorize]
+        [Authorize]
         public Task<List<UsersModels>> getusers()
         {
             return _UsConLogical.GetUsers();
@@ -52,7 +52,7 @@ namespace Services
         // post: api/todoitems
         // <snippet_create>
         [HttpPost]
-        //[Authorize]
+        [Authorize]
         public async Task<Mensaje> postuser(UsersModels usuario)
         {
             return await _UsConLogical.CreateUser(usuario);

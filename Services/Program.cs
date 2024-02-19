@@ -29,9 +29,26 @@ builder.Services.AddScoped<fleetRouteProContext>(provider =>
     return fleetRouteProContext;
 });
 
+//users
 builder.Services.AddScoped<authControllogical>();
 builder.Services.AddScoped<UsersContrlollogical>();
 builder.Services.AddScoped<DAOUsers>();
+
+//rute
+builder.Services.AddScoped<RouteControlLogical>();
+builder.Services.AddScoped<DAORoutes>();
+
+//vehicles
+builder.Services.AddScoped<VehiclesControlLogical>();
+builder.Services.AddScoped<DAOVehicles>();
+
+//Drivers
+builder.Services.AddScoped<DriversControlLogical>();
+builder.Services.AddScoped<DAODrivers>();
+
+//schedules
+builder.Services.AddScoped<SchedulesControlLogical>();
+builder.Services.AddScoped<DAOSchedules>();
 
 
 // Add services to the container.
