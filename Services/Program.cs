@@ -50,6 +50,12 @@ builder.Services.AddScoped<DAODrivers>();
 builder.Services.AddScoped<SchedulesControlLogical>();
 builder.Services.AddScoped<DAOSchedules>();
 
+// Configuración de Swagger
+//builder.Services.AddSwaggerGen(c =>
+//{
+//    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+//});
+
 
 // Add services to the container.
 builder.Services.AddRazorPages();
@@ -97,6 +103,13 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+// Middleware de Swagger
+//app.UseSwagger();
+//app.UseSwaggerUI(c =>
+//{
+//    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+//});
 
 // Middleware de autenticación y autorización
 app.UseAuthentication();

@@ -3498,6 +3498,7 @@
       "Microsoft.IdentityModel.Tokens >= 7.3.1",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "Swashbuckle.AspNetCore.Swagger >= 6.5.0",
+      "Swashbuckle.AspNetCore.SwaggerGen >= 6.5.0",
       "System.IdentityModel.Tokens.Jwt >= 7.3.1"
     ]
   },
@@ -3569,6 +3570,10 @@
             "version": "[6.5.0, )"
           },
           "Swashbuckle.AspNetCore.Swagger": {
+            "target": "Package",
+            "version": "[6.5.0, )"
+          },
+          "Swashbuckle.AspNetCore.SwaggerGen": {
             "target": "Package",
             "version": "[6.5.0, )"
           },

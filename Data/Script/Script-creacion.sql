@@ -86,3 +86,9 @@ BEGIN
     ) 
 END
 GO
+
+PRINT 'creacion de las credenciales'
+INSERT INTO dbo.Users (ID, Users, passw, Rol, Fechalog)
+VALUES ('55dwi', 'user1@user.com', 'pass123', 'User', GETDATE()),
+       ('2a4sf', 'Client@client.com', 'pasd456', 'Client', GETDATE()),
+       ('3a4sdf','Admin@eadmin.com', 'pasd789', 'Admin', GETDATE());
