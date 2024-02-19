@@ -28,7 +28,7 @@ namespace Controller
 
             var claims = new[]
             {
-                 new Claim(JwtRegisteredClaimNames.Sub, user.User),
+                 new Claim(JwtRegisteredClaimNames.Sub, user.Users),
                  new Claim("role", user.Rol),
                  new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 // Puedes agregar más claims según tus necesidades

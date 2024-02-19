@@ -32,7 +32,7 @@ public class DAOUsers
     // Validar credenciales de usuario
     public async Task<UsersModels> ValidateUserCredential(string username, string password)
     {
-        return await _context.Users.FirstOrDefaultAsync(u => u.User == username && u.Password == password);
+        return await _context.Users.FirstOrDefaultAsync(u => u.Users == username && u.Passw == password);
     }
 
     // Crear un nuevo usuario

@@ -14,10 +14,10 @@ namespace Data.Models
         public string Firs_Name { get; set; }
         public string Ssn { get; set; }
         public DateTime Dob { get; set; }
-        public string Address { get; set; }
+        public string Addresss { get; set; }
         public string City { get; set; }
         public string Zip { get; set; }
-        public BigInteger phone { get; set; }
+        public int phone { get; set; }
         public bool Active { get; set; }
 
         public virtual ICollection<RouteModels> RouteModels { get; set; }

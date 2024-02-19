@@ -11,8 +11,8 @@ namespace Data.Models
         public string Id { get; set; }
         public string RouteId { get; set; }
         public int WeekNum { get; set; }
-        public string From { get; set; }
-        public string To { get; set; }
+        public string Fromm { get; set; }
+        public string Too { get; set; }
         public bool Active { get; set; }
 
         public virtual RouteModels RouteModels { get; set; }
